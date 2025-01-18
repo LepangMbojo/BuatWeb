@@ -1,0 +1,45 @@
+:root{
+    --primary-color: #90ee90;
+    --bg : #4cc169;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: rgb(177, 7, 7);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;  
+    background-color:rgb(33, 214, 33);
+    border-bottom: 1px solid rgb(91, 195, 124);
+    position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+z-index: 1000;
+}
+
+
+.navlogo{
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.333);
+}
+
+.navlogo span{
+    color: rgba(55, 56, 42, 0.333);
+}
