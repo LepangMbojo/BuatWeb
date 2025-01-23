@@ -91,7 +91,7 @@ display: none;
         position: absolute;
         top: 100%;
         right: -100%;
-        background: #ffff;
+        background: #59bc72;
         width: 30rm;
         height: 100vh;
     }
@@ -100,8 +100,20 @@ display: none;
     transition: 0.5s;   
 
 }
+
+.nav-link a{
+    display: block;
+    margin: 1.5rem ;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #000;
 }
 
+.nav-link a::after{
+    transform-origin:0 0;
+} 
+
+}
 /* mobile */
 @media (max-width: 450px){
     html{
