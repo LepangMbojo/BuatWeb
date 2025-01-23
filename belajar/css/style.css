@@ -32,14 +32,74 @@ body{
 z-index: 1000;
 }
 
-
 .navlogo{
     font-size: 2rem;
     font-weight: 600;
     align-items: center;
-    color: rgba(0, 0, 0, 0.333);
+    color: #ffff;
+font-style: italic;
 }
 
 .navlogo span{
-    color: rgba(55, 56, 42, 0.333);
+    color: rgb(65, 140, 86);
+}
+.navbar-nav a{
+    color: #ffff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-nav a::after {
+content:'';
+display: block;
+padding-bottom:0.5rem ;
+border-bottom: 0.1rem solid var(--primary-color);
+transform: scaleX(0);
+}
+
+.navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+    transition: 0.2s;
+} 
+
+#menu{
+display: none;
+}
+
+/* media queris*/
+
+/* leptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #ffff;
+        width: 30rm;
+        height: 100vh;
+    }
+}
+
+/* mobile */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
 }
