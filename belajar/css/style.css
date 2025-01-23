@@ -79,6 +79,7 @@ display: none;
         font-size: 75%;
     }
 }
+
 /* tablet */
 @media (max-width: 768px){
     html{
