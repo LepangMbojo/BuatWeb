@@ -43,18 +43,18 @@ font-style: italic;
 .navlogo span{
     color: rgb(65, 140, 86);
 }
-.navbar-nav a{
+.nav-link a{
     color: #ffff;
     display: inline-block;
     font-size: 1.2rem;
     margin: 0 1rem;
 }
 
-.navbar-nav a:hover {
+.nav-link a:hover {
     color: var(--primary-color);
 }
 
-.navbar-nav a::after {
+.nav-link a::after {
 content:'';
 display: block;
 padding-bottom:0.5rem ;
@@ -62,7 +62,7 @@ border-bottom: 0.1rem solid var(--primary-color);
 transform: scaleX(0);
 }
 
-.navbar-nav a:hover::after{
+.nav-link a:hover::after{
     transform: scaleX(0.5);
     transition: 0.2s;
 } 
@@ -87,7 +87,7 @@ display: none;
     #menu{
         display: inline-block;
     }
-    .navbar-nav{
+   .nav-link{
         position: absolute;
         top: 100%;
         right: -100%;
@@ -95,6 +95,11 @@ display: none;
         width: 30rm;
         height: 100vh;
     }
+.nav-link.active{
+    right: 0;
+    transition: 0.5s;   
+
+}
 }
 
 /* mobile */
